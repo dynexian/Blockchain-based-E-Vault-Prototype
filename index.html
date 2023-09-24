@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Record Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Legal Record Management</h1>
+    </header>
+    <main>
+        <section class="dashboard">
+            <button id="connectMetamask" class="connect-button">MetaMask</button>
+            <button id="connectContract" class="connect-button">Contract</button>
+        </section>
+        <section class="create-record">
+            <h2>Create Legal Record</h2>
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter title">
+            <label for="content">Content:</label>
+            <input type="text" id="content" placeholder="Enter content">
+            <input type="file" id="fileInput">
+            <button id="createLegalRecord">Create Record</button>
+            <p id="createRecordArea"></p>
+            <div id="CreateTableContainer"></div>
+        </section>
+        <section class="get-record">
+            <h2>Get Legal Record</h2>
+            <label for="recordId">Record ID:</label>
+            <input type="text" id="recordId" placeholder="Enter record ID">
+            <button id="getLegalRecord">Get Record</button>
+            <div id="getRecordArea"></div>
+            <div id="downloadLinkContainer" class="download-link-container">
+                <!-- Download link will be added here by JavaScript -->
+            </div>
+            
+            <a id="downloadLink" style="display: none;" download class="downloadLink">Download File</a>
+            <div id="GetTableContainer"></div>
+        </section>
+        <section class="all-records">
+            <h2>Show All Records</h2>
+            <button id="getAllRecords">Show All Records</button>
+            <div id="allRecordsArea"></div>
+            <div id="GetAllTableContainer"></div>
+        </section>
+        <section class="log-section">
+            <h2>Logs</h2>
+            <div id="logArea"></div>
+        </section>
+        <section class="account-section">
+            <h2>Connected Account</h2>
+            <p id="accountArea"></p>
+        </section>
+        <section class="contract-section">
+            <h2>Connected Contract</h2>
+            <p id="contractArea"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

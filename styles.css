@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.connect-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.connect-button:hover {
+    background-color: #005cbf;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005cbf;
+}
+
+.log-area {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.log-section {
+    margin-top: 20px;
+}
+
+.log-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#logArea {
+    max-height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .connect-button {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* CSS for the table wrapper */
+#GetTableContainer {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
+}
+
+/* CSS for the getLegalRecord table wrapper */
+#reateTableContainer {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
+}
+
+/* CSS for the displayAllRecords table wrapper */
+#GetAllTableContainer {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
+}
+
+/* Add styles for your tables as needed */
+/* Style for the tableContainer */
+#CreateTableContainer {
+    max-width: 100%; /* Ensure the table container doesn't exceed its parent's width */
+    overflow-x:auto ; /* Add horizontal scrollbar when content overflows */
+}
+
+/* Style for the table */
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Add a light gray border to the table */
+}
+
+.table-wrapper th, .table-wrapper td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-wrapper th {
+    background-color: #007BFF; /* Blue background for table headers */
+    color: #fff; /* White text color for table headers */
+}
+
+.table-wrapper tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Responsive design for the table */
+@media (max-width: 768px) {
+    .table-wrapper table {
+        font-size: 14px; /* Reduce font size on smaller screens */
+    }
+    
+    .table-wrapper th, .table-wrapper td {
+        padding: 8px; /* Reduce cell padding on smaller screens */
+    }
+
+}
+/* Apply these styles to the downloadLinkContainer */
+.download-link-container {
+    text-align: center; /* Center the download link */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.download-link-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background color for the link */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.download-link-container a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
